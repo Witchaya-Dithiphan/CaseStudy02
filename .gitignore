@@ -1,0 +1,10 @@
+# Build output directories
+bin/
+obj/
+
+# Project configuration file
+CaseStudy02.csproj
+
+# Executables and debug files
+*.exe
+*.pdb
