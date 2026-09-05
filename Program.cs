@@ -66,7 +66,7 @@ namespace OS_Problem_02
 
             for (i = 1; i < 51; i++)
             {
-                EnQueue(i,t);
+                EnQueue(i, t);
                 Thread.Sleep(5); //ห้ามแก้ไขหรือเปลี่ยนแปลงบรรทัดนี้/Editing or Modification of this line is forbidden
             }
 
@@ -83,7 +83,7 @@ namespace OS_Problem_02
 
             for (i = 100; i < 151; i++)
             {
-                EnQueue(i,t);
+                EnQueue(i, t);
                 Thread.Sleep(7); //ห้ามแก้ไขหรือเปลี่ยนแปลงบรรทัดนี้/Editing or Modification of this line is forbidden
             }
 
@@ -104,7 +104,7 @@ namespace OS_Problem_02
             {
                 j = DeQueue(t);
                 if (j == No_Data) break; //ใน queue ไม่มีข้อมูลแล้ว (กรณี EnQueue เสร็จแล้ว เพราะมันเสร่อดึงเกิน) -> ออก loop
-                
+
                 Thread.Sleep(16); //ห้ามแก้ไขหรือเปลี่ยนแปลงบรรทัดนี้/Editing or Modification of this line is forbidden
             }
 
@@ -134,12 +134,12 @@ namespace OS_Problem_02
             t21.Join();
             t22.Join();
 
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey(true);
             for (int k = 0; k < ExitedCount; k++)
             {
                 Console.WriteLine("thread-{0} exit", ExitedThreads[k]);
             }
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey(true);
         }
     }
 }
